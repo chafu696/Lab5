@@ -21,6 +21,7 @@ server <- function(input,output){
   output$plot <- renderPlot(ggplot(data = rikInput(), aes(fill=key, y=Votes, x=Party)) +
                              geom_col(position="stack") +
                               ggtitle(paste("Vote distribution by party in the year", input$yr)) +
+                              theme_bw() +
                               theme(plot.title = element_text(hjust = 0.5))
   )
   
