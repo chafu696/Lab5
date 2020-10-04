@@ -29,6 +29,9 @@ The function creates an API connecting to website to get the data of voting in d
 1. The range of the input is from "2020/21" to "2002/2003".
 1. The return is a data.frame with some basic analysis.
 
+## runRiksShiny
+1. The function searches the riksdagen package directory to locate a folder called "ShinyApp". It then uses shiny::runApp to run the shiny app from that directory. It takes no arguments.
+
 # Usage
 
 ## Install
