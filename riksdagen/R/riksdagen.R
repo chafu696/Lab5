@@ -2,11 +2,11 @@
 #'
 #'@name riksdagen
 #'
-#'@description riksdagen function creates an API to get data and makes some basic analysis.
+#'@description riksdagen function uses Riksdagen's API to get data and makes some basic analysis.
 #'
-#'@details The function creates an API connecting to website to get the data of voting in different parties and makes some basic analysis.
+#'@details The function uses the API to get the voting history grouped by party and makes some basic analysis.
 #'
-#'@param voteyear a character with fixed format
+#'@param voteyear a character with fixed format "YYYY/YY"
 #'
 #'@return a data frame with percentage of voting data
 #'
