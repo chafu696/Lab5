@@ -1,0 +1,47 @@
+---
+title: "riksdagenvignette"
+author: "Chao Fu & Michael Bailey"
+data: "r Sys.Date()"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{riksdagenvignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r}
+library(riksdagen)
+```
+# Description
+The function creates an API connecting to website to get the data of voting in different parties and makes some basic analysis.
+
+# Functions
+
+## riksdagen
+1. The input is a character and format is "2012/13".
+1. The range of the input is from "2020/21" to "2002/2003".
+1. The return is a data.frame with some basic analysis.
+
+# Usage
+
+## Install
+
+```{r, eval=FALSE}
+devtools::install_github("chafu696/Lab5")
+
+```
+
+## Example
+
+```{r, eval=FALSE}
+users <- riksdagen("2020/21")
+print(users)
+
+```

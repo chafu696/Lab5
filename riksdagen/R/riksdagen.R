@@ -1,6 +1,6 @@
 #'THis is a description of riksdagen function
 #'
-#'@name riksdegen
+#'@name riksdagen
 #'
 #'@description riksdagen function creates an API to get data and makes some basic analysis.
 #'
@@ -47,11 +47,13 @@
     }
   }
   myjson1$Total <- rowSums(myjson1[, c(2, 3, 4, 5)], na.rm = TRUE)
-  avedata <- lapply(myjson1[, c(2, 3, 4, 5)], function(y) format(100 * (y / myjson1$Total), digits = 1))
+  avedata <- lapply(myjson1[, c(2, 3, 4, 5)], function(y) round(100 * (y / myjson1$Total)))
   avedata1 <- as.data.frame(avedata)
+
   myjson1 <- cbind(myjson1, avedata1)
   colnames(myjson1) <- c("Party", "Yes", "No", "Absence", "Refrain", "Total", "AveYes", "AveNo", "AveAbsence", "AveRefrain")
   return(myjson1)
+
   }
 
 
