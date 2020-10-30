@@ -7,16 +7,16 @@
 riksdagen(voteyear)
 }
 \arguments{
-\item{voteyear}{a character with fixed format}
+\item{voteyear}{a character with fixed format "YYYY/YY"}
 }
 \value{
 a data frame with percentage of voting data
 }
 \description{
-riksdagen function creates an API to get data and makes some basic analysis.
+riksdagen function uses Riksdagen's API to get data and makes some basic analysis.
 }
 \details{
-The function creates an API connecting to website to get the data of voting in different parties and makes some basic analysis.
+The function uses the API to get the voting history grouped by party and makes some basic analysis.
 }
 \examples{
  riksdagen("2020/21")
