@@ -1,4 +1,5 @@
 library(ggplot2)
+library(riksdagen)
 
 ui <- fluidPage(
   titlePanel("Voting data from Swedish Riksdagen"),
