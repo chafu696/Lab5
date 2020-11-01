@@ -10,7 +10,7 @@
 #'
 #'@return a data frame with percentage of voting data
 #'
-#'@examples  riksdagen("2019/20")
+#'@examples  riksdagen("2020/21")
 #'
 #'@importFrom  httr GET content modify_url
 #'
