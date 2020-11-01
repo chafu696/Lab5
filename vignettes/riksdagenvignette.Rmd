@@ -44,7 +44,7 @@ devtools::install_github("chafu696/Lab5")
 ## Example
 
 ```{r, eval=FALSE}
-users <- riksdagen("2020/21")
+users <- riksdagen("2019/20")
 print(users)
 
 ```
